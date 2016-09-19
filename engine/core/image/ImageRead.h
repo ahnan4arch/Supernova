@@ -9,7 +9,7 @@ class ImageRead{
     
 public:
     
-    virtual RawImage getRawImage(FILE* file) = 0;
+    virtual RawImage getRawImage(FILE* file);
     
     virtual ~ImageRead();
     

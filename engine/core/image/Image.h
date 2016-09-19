@@ -10,7 +10,7 @@ private:
     ImageRead* imageRead;
     RawImage rawImage;
     
-    ImageRead* getImageFormat(const char* relative_path, FILE* file_stream);
+    //ImageRead* getImageFormat(const char* relative_path, FILE* file_stream);
 public:
     Image();
     Image(const char* relative_path);

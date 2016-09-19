@@ -1,6 +1,3 @@
-
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-
 add_definitions("-frtti -fexceptions")
 # add_definitions("-Wall -Wextra")
 
@@ -16,11 +13,17 @@ if (COMPILE_ZLIB)
     add_subdirectory (engine/libs/zlib)
 endif (COMPILE_ZLIB)
 
-include_directories ("${CMAKE_CURRENT_SOURCE_DIR}/engine/libs/libpng")
-add_subdirectory (engine/libs/libpng)
+# include_directories ("${CMAKE_CURRENT_SOURCE_DIR}/engine/libs/libpng")
+# add_subdirectory (engine/libs/libpng)
 
-include_directories (SYSTEM "${CMAKE_CURRENT_SOURCE_DIR}/engine/libs/libjpeg")
-add_subdirectory (engine/libs/libjpeg)
+# include_directories ("${CMAKE_CURRENT_SOURCE_DIR}/engine/libs/libtiff")
+# add_subdirectory (engine/libs/libtiff)
+
+# include_directories ("${CMAKE_CURRENT_SOURCE_DIR}/engine/libs/libjpeg")
+# add_subdirectory (engine/libs/libjpeg)
+
+include_directories ("${CMAKE_CURRENT_SOURCE_DIR}/engine/libs/freeimage")
+add_subdirectory (engine/libs/freeimage)
 
 include_directories ("${CMAKE_CURRENT_SOURCE_DIR}/engine/core")
 add_subdirectory (engine/core)

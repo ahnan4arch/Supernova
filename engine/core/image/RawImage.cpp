@@ -53,7 +53,8 @@ RawImage::~RawImage() {
 }
 
 void RawImage::releaseImageData(){
-    free((void*)data);
+    //TODO
+    //free((void*)data);
 }
 
 int RawImage::getWidth(){
